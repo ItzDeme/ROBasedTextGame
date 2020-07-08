@@ -9,6 +9,7 @@
 using namespace std;
 int textSpeed = 65;	//global variable for sleep function "speed of text"
 void orb_of_choosing();
+void doneChoosing();
 
 void introduction() {
 	string longIntro = "Greetings Fallen, I sense a strong aura coming from you. It's nothing I have ever felt before.";
@@ -153,4 +154,34 @@ void orb_of_choosing() {
 		system("pause");
 		orb_of_choosing();
 	}
+	void doneChoosing();
+}
+
+void doneChoosing() {
+	string done_choosing = "Now that the orb has finished choosing what your class.";
+	string done_choosing2 = "You mustn't waste anymore time!";
+	string done_choosing3 = "I'm sending you to the maze of unyielding do your best to complete it!";
+	string done_choosing4 = "See you Fallen!... I mean ";
+
+	for (int i = 0; i < done_choosing.length(); i++) {
+		cout << done_choosing[i];
+		Sleep(textSpeed);
+	}
+	cout << endl;
+	for (int i = 0; i < done_choosing2.length(); i++) {
+		cout << done_choosing2[i];
+		Sleep(textSpeed);
+	}
+	cout << endl;
+	for (int i = 0; i < done_choosing3.length(); i++) {
+		cout << done_choosing3[i];
+		Sleep(textSpeed);
+	}
+	cout << endl;
+	done_choosing4 += player1.getName();
+	for (int i = 0; i < done_choosing4.length(); i++) {
+		cout << done_choosing[i];
+		Sleep(textSpeed);
+	}
+	cout << endl;
 }
