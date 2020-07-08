@@ -54,6 +54,7 @@ int main() {
 	introduction();
 	string playerName;
 	cout << endl << "Type your name: ";
+	cin.ignore();
 	getline(cin, playerName);
 	Player player1(playerName, 30, 1); //creates a class of player1.
 	cout << " Come " << player1.getName() << " Let us venture to the Orb choosing! " << endl;
