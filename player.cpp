@@ -38,6 +38,18 @@ int Player::playerChoice() {
 void Player::hitPointsChange(int attacked){
 	hitPoints -= attacked;
 }
+void Monster::ifMonsterKilled() {
+	monsterskilled += 1;
+}
+int Monster::getAmountOfMonstersKilled() {
+	return monsterskilled;
+}
+void Monster::getOutMaze(){
+	monsterskilled = 10;
+}
+void Player::hitPointsReset() {
+	hitPoints = 30;
+}
 
 void transition() {
 

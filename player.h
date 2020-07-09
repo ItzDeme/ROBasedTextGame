@@ -19,6 +19,7 @@ public:
 		void playerChoiceClass(int cH);
 		int playerChoice();
 		void hitPointsChange(int attacked);
+		void hitPointsReset();
 
 };
 
@@ -106,8 +107,11 @@ public:
 };
 
 class Monster {
-
+	int monsterskilled = 0;
 public:
+	void ifMonsterKilled();
+	int getAmountOfMonstersKilled();
+	void getOutMaze();
 	void bearFight();
 	void batFight();
 	void goblinFight();
