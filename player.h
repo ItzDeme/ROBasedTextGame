@@ -6,23 +6,28 @@ class Player {
 	int hitPoints = 30;
 	string name;
 	int playerEXP = 0;
+	int playerClassChoice;
 
 public:
 	
 	Player(string aName, int aHitPoints, int aPlayerEXP);
+		string changeName(string bName);
 		string getName();
+		int changeEXP(int bPlayerEXP);
 		int getHitPoints();
 		int getEXP();
-	
+		void playerChoiceClass(int cH);
+		int playerChoice();
+		void hitPointsChange(int attacked);
 
 };
 
 class Swordsman {
 	int swordmanDef = 3;
+	int swordmanAttack = 5;
 
 public:
 	int swordAttack() {
-		int swordmanAttack = 5;
 		return swordmanAttack;
 	}
 	int swordDef() {
@@ -32,6 +37,7 @@ public:
 	void swordSkill() {
 		cout << "You grit your teeth and your tenacity rises!" << endl;
 		swordmanDef += 3;
+		system("pause");
 	}
 	void swordmanBuffReset() {
 		swordmanDef = 3;
@@ -87,12 +93,23 @@ public:
 		}
 		return archerAmp;
 	}
-	void archerSkill() {
+	int archerSkill() {
 		cout << "You pull pull out your knife and you shank your enemy." << endl;
+		cout << "You backflip back into the shadows." << endl;
 		int archerShank = 2;
+		return archerShank;
 	}
 	void archerBuffReset() {
 		ifFocused = false;
 		archerAmp = 0;
 	}
+};
+
+class Monster {
+
+public:
+	void bearFight();
+	void batFight();
+	void goblinFight();
+
 };

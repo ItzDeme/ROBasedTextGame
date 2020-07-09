@@ -1,16 +1,22 @@
 ﻿  Source.cpp
-C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(19,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(25,20): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(30,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(35,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(40,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(78,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(83,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(91,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(106,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(111,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(123,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(128,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(139,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(144,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(36,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(41,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(46,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(51,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(93,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(98,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(106,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(122,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(127,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(140,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(145,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(158,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(163,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(186,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(191,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(196,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(202,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(210,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(281,22): warning C4018: '<': signed/unsigned mismatch
   ROBasedTextGame.vcxproj -> C:\Users\Vicio\source\repos\ROBasedTextGame\Debug\ROBasedTextGame.exe
