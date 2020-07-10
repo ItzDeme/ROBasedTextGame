@@ -2,6 +2,9 @@
 #include <locale.h>
 #include <Windows.h>
 #include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
 
 
 
@@ -97,3 +100,30 @@ void transition() {
 	
 }
 
+void levelTransition() {
+
+
+
+
+	system("cls");
+		int a;
+		string matrixEffect = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789!@#$%^&*|}{][<>"; //letters for matrix
+		int y = 0;
+		
+		while (y < 250) {            //rows for matrix
+
+			for (int i = 0; i < 20; i++)  //colums for it 20 = amount of colums
+			{
+				Sleep(1);
+				a = rand() % 49;                   //calls random number to be printed.
+				cout << " " << matrixEffect[a];
+				cout << "  ";
+				
+			}
+			y++;
+			cout << endl;
+		}
+		system("cls");
+	
+
+}

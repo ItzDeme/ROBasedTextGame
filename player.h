@@ -45,11 +45,38 @@ public:
 	}
 };
 
+class Knight : public Swordsman {
+	int swordAttack = 8;
+	int beenUsed = 0;
+public:
+	int knightAttack() {
+		return swordAttack;
+		if (beenUsed <= 0) {
+			beenUsed = 0;
+		}
+		else {
+			beenUsed--;
+		}
+	}
+	int BowlingBash() {
+		if (beenUsed < 2) {
+			return swordAttack * 2;
+			beenUsed++;
+		}
+		else {
+			cout << "You attempt to Bowling Bash, but you can't exert enough strength." << endl;
+			return 0;
+		}
+	}
+};
+
 
 class Mage {
-	int mageAmp = 0;
+	
 
 public:
+	int mageSkillUsed = 0;
+	int mageAmp = 0;
 	int mageAttack() {
 		int mageAttack = 3;
 		return mageAttack;
@@ -57,6 +84,7 @@ public:
 	int mageFireBolt() {
 		int firebolt = mageAmp + 7 ;
 		cout << "Mana courses through your veins! and out of your hand you cast Fire Bolt!" << endl;
+		mageSkillUsed++;
 		return firebolt;
 	}
 	void mageSkill() {
@@ -73,11 +101,29 @@ public:
 	}
 };
 
+class Wizard : public Mage {
+	
+public:
+	int mageMeteorStorm() {
+		if (mageSkillUsed = 3) {
+			cout << "You lift your hands to the sky and summon meteors to fall from the heavens above." << endl;
+			mageSkillUsed = 0;
+			return (6 + mageAmp) * 3;
+		}
+		else {
+			cout << "You lift your hands to the sky, but nothing happens." << endl;
+			mageSkillUsed++;
+			return 0;
+		}
+	}
+};
+
 class Archer {
-	int archerAmp = 0;
+	
 	bool ifFocused = false;
 
 public:
+	int archerAmp = 0;
 	int archerAttack() {
 		int archerAttack = 4 + archerAmp;
 		return archerAttack;
@@ -103,6 +149,15 @@ public:
 	void archerBuffReset() {
 		ifFocused = false;
 		archerAmp = 0;
+	}
+};
+
+class Hunter : public Archer {
+
+public:
+	int archerAttack() {
+		int archerAttack = 7 + archerAmp;
+		return archerAttack;
 	}
 };
 

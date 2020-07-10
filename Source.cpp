@@ -21,6 +21,8 @@ void maze_of_uny();
 void rngMaze();
 void damageCalc(int playerHP, int enemyATK);
 void guessGame();
+void levelTransition();
+void classLevelUp();
 
 void introduction() {
 	string longIntro = "Greetings Fallen, I sense a strong aura coming from you. It's nothing I have ever felt before.";
@@ -64,20 +66,24 @@ int main() {
 	system("cls");
 	
 
-	introduction();
-	string playerName;
-	cout << endl << "Type your name: ";
-	cin.ignore();
-	getline(cin, playerName);
-	player1.changeName(playerName); //creates a class of player1.
-	cout << " Come " << player1.getName() << " Let us venture to the Orb choosing! " << endl;
-	system("pause");
-	orb_of_choosing();
-	doneChoosing();
-	transition();
+	//introduction();
+	//string playerName;
+	//cout << endl << "Type your name: ";
+	//cin.ignore();
+	//getline(cin, playerName);
+	//player1.changeName(playerName); //creates a class of player1.
+	//cout << " Come " << player1.getName() << " Let us venture to the Orb choosing! " << endl;
+	//system("pause");
+	//orb_of_choosing();
+	//doneChoosing();
+	//transition();
 	
 	if (player1.getHitPoints() > 0) {
-		maze_of_uny();
+		//maze_of_uny();
+		classLevelUp();
+	}
+	else {
+		cout << "Game Over" << endl;
 	}
 	return 0;
 }
@@ -755,4 +761,75 @@ void guessGame() {
 		
 	}
 	
+}
+
+void classLevelUp() {
+	string levelUp1 = "Now that you have beaten the Maze of Unyielding, ";
+	string levelUp2 = "It is time for you to grow. You can be so much more powerful.";
+	string levelUp3 = "I will grant you the ability to unlock the rest of your power ";
+	string levelUp4 = "Embrace it, feel it, BELIEVE IT!";
+	cout << "Mystic voice: ";
+	for (int i = 0; i < levelUp1.length(); i++) {		//another looping for text
+		cout << levelUp1[i];
+		Sleep(textSpeed);
+	}
+	cout << endl;
+	cout << "Mystic voice: ";
+	for (int i = 0; i < levelUp2.length(); i++) {		//another looping for text
+		cout << levelUp2[i];
+		Sleep(textSpeed);
+	}
+	cout << endl;
+	levelUp3 += player1.getName();
+	cout << "Mystic voice: ";
+	for (int i = 0; i < levelUp3.length(); i++) {		//another looping for text
+		cout << levelUp3[i];
+		Sleep(textSpeed);
+	}
+	cout << endl;
+	cout << "Mystic voice: ";
+	for (int i = 0; i < levelUp1.length(); i++) {		//another looping for text
+		cout << levelUp1[i];
+		Sleep(textSpeed);
+	}
+	cout << endl;
+	cout << "Mystic voice: ";
+	for (int i = 0; i < levelUp4.length(); i++) {		//another looping for text
+		cout << levelUp4[i];
+		Sleep(textSpeed);
+	}
+	cout << endl;
+	Sleep(250);
+	levelTransition();
+
+	string moreLevelUpText1 = "You are now much stronger.";
+	string moreLevelUpText2 = "You have more vitality.";
+	string moreLevelUpText3 = "Now make make haste!";
+	string moreLevelUpText4 = "The Demon Lord can sense your prensence.";
+
+	cout << "Mystic voice: ";
+	for (int i = 0; i < moreLevelUpText1.length(); i++) {		//another looping for text
+		cout << moreLevelUpText1[i];
+		Sleep(textSpeed);
+	}
+	cout << endl;
+	cout << "Mystic voice: ";
+	for (int i = 0; i < moreLevelUpText2.length(); i++) {		//another looping for text
+		cout << moreLevelUpText2[i];
+		Sleep(textSpeed);
+	}
+	cout << endl;
+	cout << "Mystic voice: ";
+	for (int i = 0; i < moreLevelUpText3.length(); i++) {		//another looping for text
+		cout << moreLevelUpText3[i];
+		Sleep(textSpeed);
+	}
+	cout << endl;
+	cout << "Mystic voice: ";
+	for (int i = 0; i < moreLevelUpText4.length(); i++) {		//another looping for text
+		cout << moreLevelUpText4[i];
+		Sleep(textSpeed);
+	}
+	cout << endl;
+	Sleep(250);
 }
