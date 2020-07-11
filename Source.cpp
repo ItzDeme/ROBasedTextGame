@@ -95,11 +95,23 @@ int main() {
 	
 	if (player1.getHitPoints() > 0) {
 		maze_of_uny();
-		classLevelUp();
+		if (player1.getHitPoints() > 0) {
+			classLevelUp();
+		}
+	}
+	if (player1.getHitPoints() > 0) {
 		mirrorDoppelganger();
+	}
+	if (player1.getHitPoints() > 0) {
 		doppelgangerFight();
+	}
+	if (player1.getHitPoints() > 0) {
 		transition();
+	}
+	if (player1.getHitPoints() > 0) {
 		baphometLastFight();
+	}
+	if (player1.getHitPoints() > 0) {
 		if (player1.getName() == "Ray") {
 			system("cls");
 			cout << "Thanks ray for playing my game!!! I appreciate homie. <3" << endl;
