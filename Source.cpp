@@ -126,6 +126,7 @@ int main() {
 	}
 	else {
 		cout << "Game Over" << endl;
+		system("pause");
 	}
 	return 0;
 }
@@ -218,7 +219,7 @@ void orb_of_choosing() {
 	}
 	 else {
 		cout << "Please choose and actual class!!!!" << endl;
-		cout << aOrbChoice << endl;
+		cin.clear();
 		system("pause");
 		orb_of_choosing();
 	}	
@@ -375,7 +376,7 @@ void maze_of_uny() {
 				}
 				else {
 					cout << "Please choose a correct option." << endl;
-					cout << mazeChoice << endl;
+					cin.clear();
 					system("pause");
 				}
 
@@ -430,6 +431,7 @@ void Monster::bearFight() {
 			}
 			else {
 				cout << "Please pick an actual option." << endl;
+				cin.clear();
 				system("pause");
 				system("cls");
 			}
@@ -473,6 +475,7 @@ void Monster::bearFight() {
 			}
 			else {
 				cout << "Please pick an actual option." << endl;
+				cin.clear();
 				system("pause");
 				system("cls");
 			}
@@ -510,6 +513,7 @@ void Monster::bearFight() {
 			}
 			else {
 				cout << "Please pick an actual option." << endl;
+				cin.clear();
 				system("pause");
 				system("cls");
 			}
@@ -551,6 +555,7 @@ void Monster::batFight() {
 			}
 			else {
 				cout << "Please pick an actual option." << endl;
+				cin.clear();
 				system("pause");
 				system("cls");
 			}
@@ -593,6 +598,7 @@ void Monster::batFight() {
 			}
 			else {
 				cout << "Please pick an actual option." << endl;
+				cin.clear();
 				system("pause");
 				system("cls");
 			}
@@ -628,6 +634,7 @@ void Monster::batFight() {
 			}
 			else {
 				cout << "Please pick an actual option." << endl;
+				cin.clear();
 				system("pause");
 				system("cls");
 			}
@@ -668,6 +675,7 @@ void Monster::goblinFight() {
 			}
 			else {
 				cout << "Please pick an actual option." << endl;
+				cin.clear();
 				system("pause");
 				system("cls");
 			}
@@ -711,6 +719,7 @@ void Monster::goblinFight() {
 			}
 			else {
 				cout << "Please pick an actual option." << endl;
+				cin.clear();
 				system("pause");
 				system("cls");
 			}
@@ -747,6 +756,7 @@ void Monster::goblinFight() {
 			}
 			else {
 				cout << "Please pick an actual option." << endl;
+				cin.clear();
 				system("pause");
 				system("cls");
 			}
