@@ -390,6 +390,9 @@ void maze_of_uny() {
 	}
 	if (player1.getHitPoints() > 0) {
 		cout << "You have reached the exit of the Maze." << endl;
+		playerClass1.swordmanBuffReset();
+		playerClass2.mageBuffReset();
+		playerClass3.archerBuffReset();
 	}
 	else {
 		cout << "You have been vanquished..." << endl;
@@ -867,7 +870,7 @@ void classLevelUp() {
 
 	string moreLevelUpText1 = "You are now a ";
 	string moreLevelUpText2 = "This is only half your power though. The rest you'll have to take back.";
-	string moreLevelUpText3 = "Now make make haste!";
+	string moreLevelUpText3 = "Now make haste!";
 	string moreLevelUpText4 = "The Demon Lord can sense your prensence.";
 
 	if (player1.playerChoice() == 1) {

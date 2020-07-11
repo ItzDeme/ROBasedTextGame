@@ -104,6 +104,7 @@ public:
 	}
 	void mageBuffReset() {
 		mageAmp = 0;
+		mageSkillUsed = 0;
 	}
 	int mageMeteorStorm() {
 		if (mageSkillUsed >= 3) {
