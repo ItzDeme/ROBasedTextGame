@@ -23,9 +23,9 @@ int Player::getHitPoints() {
 int Player::getEXP() {
 	return playerEXP;
 }
-string Player::changeName(string bName) {
+void Player::changeName(string bName) {
 	name = bName;
-	return name;
+	
 }
 int Player::changeEXP(int bPlayerEXP) {
 	playerEXP += bPlayerEXP;
@@ -51,7 +51,7 @@ void Monster::getOutMaze(){
 	monsterskilled = 10;
 }
 void Player::hitPointsReset() {
-	hitPoints = 30;
+	hitPoints = 45;
 }
 
 void transition() {
@@ -110,7 +110,7 @@ void levelTransition() {
 		string matrixEffect = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789!@#$%^&*|}{][<>"; //letters for matrix
 		int y = 0;
 		
-		while (y < 250) {            //rows for matrix
+		while (y < 200) {            //rows for matrix
 
 			for (int i = 0; i < 20; i++)  //colums for it 20 = amount of colums
 			{

@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 class Player {
-	int hitPoints = 30;
+	int hitPoints = 45;
 	string name;
 	int playerEXP = 0;
 	int playerClassChoice;
@@ -11,7 +11,7 @@ class Player {
 public:
 	
 	Player(string aName, int aHitPoints, int aPlayerEXP);
-		string changeName(string bName);
+		void changeName(string bName);
 		string getName();
 		int changeEXP(int bPlayerEXP);
 		int getHitPoints();
@@ -36,9 +36,15 @@ public:
 		return swordmanDef;
 	}
 	void swordSkill() {
-		cout << "You grit your teeth and your tenacity rises!" << endl;
-		swordmanDef += 3;
-		system("pause");
+		if (swordmanDef < 9) {
+			cout << "You grit your teeth and your tenacity rises!" << endl;
+			swordmanDef += 3;
+		
+		}
+		else {
+			cout << "You grit your teeth but nothing happens!" << endl;
+			
+		}
 	}
 	void swordmanBuffReset() {
 		swordmanDef = 3;
@@ -46,17 +52,18 @@ public:
 };
 
 class Knight : public Swordsman {
-	int swordAttack = 8;
+	int swordAttack = 7;
 	int beenUsed = 0;
 public:
 	int knightAttack() {
-		return swordAttack;
+		
 		if (beenUsed <= 0) {
 			beenUsed = 0;
 		}
 		else {
 			beenUsed--;
 		}
+		return swordAttack;
 	}
 	int BowlingBash() {
 		if (beenUsed < 2) {
@@ -64,7 +71,6 @@ public:
 			beenUsed++;
 		}
 		else {
-			cout << "You attempt to Bowling Bash, but you can't exert enough strength." << endl;
 			return 0;
 		}
 	}
@@ -72,23 +78,23 @@ public:
 
 
 class Mage {
-	
+	int mageSkillUsed = 0;
 
 public:
-	int mageSkillUsed = 0;
+	
 	int mageAmp = 0;
 	int mageAttack() {
 		int mageAttack = 3;
 		return mageAttack;
 	}
 	int mageFireBolt() {
-		int firebolt = mageAmp + 7 ;
+		int firebolt = mageAmp + 5 ;
 		cout << "Mana courses through your veins! and out of your hand you cast Fire Bolt!" << endl;
 		mageSkillUsed++;
 		return firebolt;
 	}
 	void mageSkill() {
-		if (mageAmp < 9) {
+		if (mageAmp < 6) {
 			cout << "You begin chanting, your magic level raises." << endl;
 			mageAmp += 3;
 		}
@@ -99,23 +105,22 @@ public:
 	void mageBuffReset() {
 		mageAmp = 0;
 	}
+	int mageMeteorStorm() {
+		if (mageSkillUsed >= 3) {
+			return (6 + mageAmp) * 3;
+			
+		}
+		else {
+			mageSkillUsed++;
+			return 0;
+		}
+	}
 };
 
 class Wizard : public Mage {
 	
 public:
-	int mageMeteorStorm() {
-		if (mageSkillUsed = 3) {
-			cout << "You lift your hands to the sky and summon meteors to fall from the heavens above." << endl;
-			mageSkillUsed = 0;
-			return (6 + mageAmp) * 3;
-		}
-		else {
-			cout << "You lift your hands to the sky, but nothing happens." << endl;
-			mageSkillUsed++;
-			return 0;
-		}
-	}
+
 };
 
 class Archer {
@@ -170,5 +175,6 @@ public:
 	void bearFight();
 	void batFight();
 	void goblinFight();
+	void doppelgangerFight();
 
 };

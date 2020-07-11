@@ -74,6 +74,9 @@ C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(1555,23):
 C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(1572,22): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(1581,23): warning C4018: '<': signed/unsigned mismatch
 C:\Users\Vicio\source\repos\ROBasedTextGame\ROBasedTextGame\Source.cpp(1587,23): warning C4018: '<': signed/unsigned mismatch
-  player.cpp
-  Generating Code...
-  ROBasedTextGame.vcxproj -> C:\Users\Vicio\source\repos\ROBasedTextGame\Debug\ROBasedTextGame.exe
+  Generating code
+  10 of 203 functions ( 4.9%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  ROBasedTextGame.vcxproj -> C:\Users\Vicio\source\repos\ROBasedTextGame\Release\ROBasedTextGame.exe
